@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jacks Test Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Test of resume upload</h1>
+    <p>Does this work abby?</p>
+</body>
+<footer>
+    <p>
+        Page Load Count: <span id="loadcount">Not Available</span><br/>
+    </p>
+
+</footer>
+</html>
+
+<script>
+    function getLoadCount(){
+
+        // call an AWS gateway API, that then calls an AWS Lambda
+        // to read and then update AWS DynamoDB item showing load count
+
+        // Note call is synchronous, delays should be minimal
+        var req = new XMLHttpRequest();  
+        req.open('GET', 
+        "https://wm19e2jwza.execute-api.ap-southeast-2.amazonaws.com/prod", 
+        false);   
+        req.send();  
+        if(req.status == 200)
+            {  
+                len = req.responseText.length;
+                // response text has opening and closing double quotes
+                console.log(req.responseText.substring(1, len-1));
+                // set field in footer
+                document.getElementById("loadcount").textContent = 
+                    req.responseText.substring(29, len-2);
+            }
+        else {
+            // NOT OK response, so log in console
+            console.log(req.status)
+        }//end if
+    }// end getLoadCount
+
+    // read and write visit count into footer, then increment count in DB
+    window.onload = function(){
+
+            // side effects
+            // getLoadCount() updates field in footer, increments count in DB
+            getLoadCount();
+        }; //end window.onload
+
+</script>
