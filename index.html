@@ -1,53 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+      
 <head>
-    <title>Jacks Test Resume</title>
+    <title>William "Jack" Freemans Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Test of resume upload</h1>
-    <p>Does this work currently??</p>
-</body>
-<footer>
-    <p>
-        Page Load Count: <span id="loadcount"></span><br/>
-    </p>
-</footer>
-</html>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#Summary">Summary</a>
+        <a href="#Employment">Employment History</a>
+        <a href="#">Professional Skills</a>
+        <a href="#">Education</a>
+        <a href="#">Referees</a>
+        <a href="#Email">Contact Me</a>
+      </div>
+      
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        <h2>William Freeman</h2>  
+
+        <hr>
+        <h2 id="Summary">Summary</h2>
+        <hr>
+        <ul>
+            <li>Extensive experience working on Mining IT projects</li> 
+            <li>Experience in senior roles within IT development teams</li>
+            <li>Extensive knowledge of the Mining Industry, Mining Value Chain and Mining Data</li>
+            <li>Solid focus on working closely with end users to deliver a suitable product</li>
+            <li>Experience in Agile and Scrum</li>
+            <li>Proven track record with delivering projects as part of small teams</li>
+            <li>Excellent communication skills in dealing with stakeholders as part of a project team</li>
+            <li>Tertiary Qualifications in Mining, Engineering and IT disciplines</li>
+        </ul>
+
+        <hr>
+        <h2 id="Employment">Employment History</h2>
+        <hr>
+
+        <h3>Senior Solution Architect - Delta Web Application</h3>
+        <h4>Jul 2018 – Present </h4>
+        <h4>Fortescue Metals Group, Perth Australia </h4>
+        <p>Delta is a web application developed in-house by Fortescue to collect and present operational data to planning and technical teams and provide decision support.</p>
+        <ul>
+            <li>A founding member of the Delta development team </li>
+            <li>Involved with initial scoping of the project, architectural proof of concepts and initial infrastructure development</li>
+            <li>Contributed to on-boarding and ramping of new staff and sharing domain knowledge as well as
+                developing the core infrastructure of the Web application</li>
+        </ul>
+
+        <h3>Applications Specialist - Reconciliation Automation</h3>
+        <h4>Jul 2017 – July 2018 </h4>
+        <h4>Fortescue Metals Group, Perth Australia </h4>
+        <p>I was lead developer in automating the end of month Physicals Reconciliation process, firstly by automating the capture and presentation of inputs to the Reconciliation Data Model and then by assisting to model and deploy the model to Anaplan in the cloud.</p>
+        <ul>
+            <li>ASP.NET C# Web Application with Angular 7+ UI and MSSQL Database, utilising Anaplan for modelling and Reporting</li>
+            <li>Automated the legacy method of calculating End of Month physicals for both Financial Reporting and Integrated Planning</li>
+            <li>Involved in training staff to conduct and support the reconciliation process</li>
+            <li>Involved with moderinising the algorithm behind the back calculated physicals tonnages</li>
+            <li>Involved in training staff to conduct and support the reconciliation process</li>
+        </ul>
+
+        <h3>Senior Developer - Time Usage Reporting Project</h3>
+        <h4>Jan 2016 – July 2017 </h4>
+        <h4>Fortescue Metals Group, Perth Australia </h4>
+        <p>I was co-developer of a centralised reporting data warehouse for Fortescues Time Usage data for mine fleet.</p>
+        <ul>
+            <li>Project to replace the existing enterprise integration database (MineODS) with a new bespoke in-house developed integration Solution for centralising Inventory Fleet data</li>
+            <li>Utilising SQL and SSIS, replaced the existing MineODS system with the a new MSSQL Database housing HME mobile fleet data from Minestar and Flanders FMS'</li>
+            <li>Provided near real time HME time usage data for FMG exposed via a MSSQL Warehouse</li>
+        </ul>
+
+        <h3>Database Developer - Mining Integration Database</h3>
+        <h4>oct 2015 – Jan 2016 </h4>
+        <h4>Fortescue Metals Group, Perth Australia </h4>
+        <p>Mining Integration Database (MID) was created to replace the ageing enterprise Inventory Data Warehouse MineODS. Utilising MSSQL and SQL job agent</p>
+        <ul>
+            <li>Co developer for the project to replace the existing enterprise integration database (MineODS) with a new bespoke in-house developed integration Solution for centralising Inventory Fleet data. </li>
+            <li>Delivered an integration platform that was utilised by Centric Mining Systems inventory management system</li>
+        </ul>
+
+        <hr>
+
+        <footer>
+            <p>
+                You are lucky visitor number: <span id="loadcount"></span><br/>
+            </p>
+            <a id="Email" href="mailto:jack.william.freeman@gmail.com?subject=Resume%20Enquiry">Email Me</a>
+        </footer>
+      </div>
+
 
 <script>
-    function getLoadCount(){
-
-        // call an AWS gateway API, that then calls an AWS Lambda
-        // to read and then update AWS DynamoDB item showing load count
-
-        // Note call is synchronous, delays should be minimal
-        var req = new XMLHttpRequest();  
-        req.open('GET', 
-        "https://2suw3xvc05.execute-api.ap-southeast-2.amazonaws.com/Prod/readdb", 
-        false);   
-        req.send();  
-        if(req.status == 200)
-            {  
-                len = req.responseText.length;
-                // response text has opening and closing double quotes
-                console.log(req.responseText);
-                // set field in footer
-                document.getElementById("loadcount").textContent = 
-                    req.responseText;
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "white";
+    }
+    
+        function getLoadCount(){
+    
+             // call an AWS gateway API, that then calls an AWS Lambda
+            // to read and then update AWS DynamoDB item showing load count
+            // Note call is synchronous, delays should be minimal
+            var req = new XMLHttpRequest();  
+            req.open('GET', 
+            "https://2suw3xvc05.execute-api.ap-southeast-2.amazonaws.com/Prod/readdb", 
+            false);   
+            req.send();  
+            if(req.status == 200)
+                {  
+                    len = req.responseText.length;
+                    // response text has opening and closing double quotes
+                    console.log(req.responseText);
+                    // set field in footer
+                    document.getElementById("loadcount").textContent = 
+                        req.responseText;
+                }
+            else {
+                // NOT OK response, so log in console
+                console.log(req.status)
             }
-        else {
-            // NOT OK response, so log in console
-            console.log(req.status)
-        }//end if
-    }// end getLoadCount
-
-    // read and write visit count into footer, then increment count in DB
-    window.onload = function(){
-
-            // side effects
-            // getLoadCount() updates field in footer, increments count in DB
-            getLoadCount();
-        }; //end window.onload
-
+        }
+    
+        // read and write visit count into footer, then increment count in DB
+        window.onload = function(){
+    
+                getLoadCount();
+            }; 
+    
 </script>
+</body>
+</html>
+
+
