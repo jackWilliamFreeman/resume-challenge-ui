@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-      
-<head>
-    <title>William "Jack" Freemans Resume</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#Summary">Summary</a>
-        <a href="#Employment">Employment History</a>
-        <a href="#">Professional Skills</a>
-        <a href="#">Education</a>
-        <a href="#">Referees</a>
-        <a href="#Email">Contact Me</a>
+   <head>
+      <title>William "Jack" Freemans Resume</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div id="mySidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="#Summary">Summary</a>
+         <a href="#Employment">Employment History</a>
+         <a href="#">Professional Skills</a>
+         <a href="#">Education</a>
+         <a href="#">Referees</a>
+         <a href="#Email">Contact Me</a>
       </div>
-      
-      <div id="main">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-        <h2>William Freeman</h2>  
 
-        <hr>
-        <h2 id="Summary">Summary</h2>
-        <hr>
-        <ul>
-            <li>Extensive experience working on Mining IT projects</li> 
+      <div id="navbar">
+        <a class="active" onclick="openNav()">Menu</a>
+        <b>Jack Freemans Resume</b>
+      </div>
+
+      <div id="main">
+         <div class="title-container">
+            <div class="title">
+            William Freeman
+            </div>
+            <div class="contact-details">
+                <p><strong>a:</strong> 131 Dampier Avenue Mullalloo</p>
+                <p><strong>m:</strong> 0431 205 357</p>
+                <p><strong>e:</strong>  <a href="mailto:jack.william.freeman@gmail.com?subject=Resume%20Enquiry">jack.william.freeman@gmail.com</a></p>
+            </div>
+         </div>
+         <hr>
+         <div class="major-heading" id="Summary">Summary</div>
+         <hr>
+         <ul>
+            <li>Extensive experience working on Mining IT projects</li>
             <li>Experience in senior roles within IT development teams</li>
             <li>Extensive knowledge of the Mining Industry, Mining Value Chain and Mining Data</li>
             <li>Solid focus on working closely with end users to deliver a suitable product</li>
@@ -33,114 +43,121 @@
             <li>Proven track record with delivering projects as part of small teams</li>
             <li>Excellent communication skills in dealing with stakeholders as part of a project team</li>
             <li>Tertiary Qualifications in Mining, Engineering and IT disciplines</li>
-        </ul>
-
-        <hr>
-        <h2 id="Employment">Employment History</h2>
-        <hr>
-
-        <h3>Senior Solution Architect - <em>Delta Web Application</em></h3>
-        <h4>Jul 2018 – Present
-        <br>Fortescue Metals Group, Perth Australia </h4>
-        <p>Delta is a web application developed in-house by Fortescue to collect and present operational data to planning and technical teams and provide decision support.</p>
-        <ul>
+         </ul>
+         <hr>
+         <div class="major-heading" id="Employment">Employment History</div>
+         <hr>
+         <div class="subheading">Senior Solution Architect - <em>Delta Web Application</em></div>
+         <div class="minor-subheading">Jul 2018 to Present
+            <br>Fortescue Metals Group, Perth Australia  
+         </div>
+         <p>Delta is a web application developed in-house by Fortescue to collect and present operational data to planning and technical teams and provide decision support.</p>
+         <ul>
             <li>Angular 7+ UI Web application, with mixture of on premis and cloud infrastructure</li>
             <li>A founding member of the Delta development team </li>
             <li>Involved with initial scoping of the project, architectural proof of concepts and initial infrastructure development</li>
             <li>Contributed to on-boarding and ramping of new staff and sharing domain knowledge as well as
-                developing the core infrastructure of the Web application</li>
-        </ul>
-
-        <h3>Applications Specialist - <em>Reconciliation Automation</em></h3>
-        <h4>Jul 2017 – July 2018 <br>
-        Fortescue Metals Group, Perth Australia </h4>
-        <p>I was lead developer in automating the end of month Physicals Reconciliation process, firstly by automating the capture and presentation of inputs to the Reconciliation Data Model and then by assisting to model and deploy the model to Anaplan in the cloud.</p>
-        <ul>
+               developing the core infrastructure of the Web application
+            </li>
+         </ul>
+         <div class="subheading">Applications Specialist - <em>Reconciliation Automation</em></div>
+         <div class="minor-subheading">Jul 2017 to July 2018 <br>
+            Fortescue Metals Group, Perth Australia 
+         </div>
+         <p>I was lead developer in automating the end of month Physicals Reconciliation process, firstly by automating the capture and presentation of inputs to the Reconciliation Data Model and then by assisting to model and deploy the model to Anaplan in the cloud.</p>
+         <ul>
             <li>ASP.NET C# Web Application with Angular 7+ UI and MSSQL Database, utilising Anaplan for modelling and Reporting</li>
             <li>Automated the legacy method of calculating End of Month physicals for both Financial Reporting and Integrated Planning</li>
             <li>Involved in training staff to conduct and support the reconciliation process</li>
             <li>Involved with moderinising the algorithm behind the back calculated physicals tonnages</li>
             <li>Involved in training staff to conduct and support the reconciliation process</li>
-        </ul>
-
-        <h3>Senior Developer - <em>Time Usage Reporting Project</em></h3>
-        <h4>Jan 2016 – July 2017
-        <br>Fortescue Metals Group, Perth Australia </h4>
-        <p>I was co-developer of a centralised reporting data warehouse for Fortescues Time Usage data for mine fleet.</p>
-        <ul>
+         </ul>
+         <div class="subheading">Senior Developer - <em>Time Usage Reporting Project</em></div>
+         <div class="minor-subheading">Jan 2016 to July 2017
+            <br>Fortescue Metals Group, Perth Australia 
+         </div>
+         <p>I was co-developer of a centralised reporting data warehouse for Fortescues Time Usage data for mine fleet.</p>
+         <ul>
             <li>Project to replace the existing enterprise integration database (MineODS) with a new bespoke in-house developed integration Solution for centralising Inventory Fleet data</li>
             <li>Utilising SQL and SSIS, replaced the existing MineODS system with the a new MSSQL Database housing HME mobile fleet data from Minestar and Flanders FMS'</li>
             <li>Provided near real time HME time usage data for FMG exposed via a MSSQL Warehouse</li>
-        </ul>
-
-        <h3>Database Developer - <em>Mining Integration Database</em></h3>
-        <h4>Oct 2015 – Jan 2016
-        <br>Fortescue Metals Group, Perth Australia </h4>
-        <p>Mining Integration Database (MID) was created to replace the ageing enterprise Inventory Data Warehouse MineODS. Utilising MSSQL and SQL job agent</p>
-        <ul>
+         </ul>
+         <div class="subheading">Database Developer - <em>Mining Integration Database</em></div>
+         <div class="minor-subheading">Oct 2015 to Jan 2016
+            <br>Fortescue Metals Group, Perth Australia 
+         </div>
+         <p>Mining Integration Database (MID) was created to replace the ageing enterprise Inventory Data Warehouse MineODS. Utilising MSSQL and SQL job agent</p>
+         <ul>
             <li>Co developer for the project to replace the existing enterprise integration database (MineODS) with a new bespoke in-house developed integration Solution for centralising Inventory Fleet data. </li>
             <li>Delivered an integration platform that was utilised by Centric Mining Systems inventory management system</li>
-        </ul>
-
-        <hr>
-
-        <footer>
+         </ul>
+         <hr>
+         <footer>
             <p>
-                You are lucky visitor number: <span id="loadcount"></span><br/>
+               You are lucky visitor number: <span id="loadcount"></span><br/>
             </p>
             <a id="Email" href="mailto:jack.william.freeman@gmail.com?subject=Resume%20Enquiry">Email Me</a>
-        </footer>
+         </footer>
       </div>
+      <script>
+         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+         function openNav() {
+           document.getElementById("mySidenav").style.width = "250px";
+           document.getElementById("main").style.marginLeft = "250px";
+           document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+         }
+         
+         /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+         function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+           document.getElementById("main").style.marginLeft = "0";
+           document.body.style.backgroundColor = "white";
+         }
+         
+             function getLoadCount(){
+         
+                  // call an AWS gateway API, that then calls an AWS Lambda
+                 // to read and then update AWS DynamoDB item showing load count
+                 // Note call is synchronous, delays should be minimal
+                 var req = new XMLHttpRequest();  
+                 req.open('GET', 
+                 "https://2suw3xvc05.execute-api.ap-southeast-2.amazonaws.com/Prod/readdb", 
+                 false);   
+                 req.send();  
+                 if(req.status == 200)
+                     {  
+                         len = req.responseText.length;
+                         // response text has opening and closing double quotes
+                         console.log(req.responseText);
+                         // set field in footer
+                         document.getElementById("loadcount").textContent = 
+                             req.responseText;
+                     }
+                 else {
+                     // NOT OK response, so log in console
+                     console.log(req.status)
+                 }
+             }
+         
+             // read and write visit count into footer, then increment count in DB
+             window.onload = function(){
+         
+                     getLoadCount();
+                 }; 
+                 
+                 window.onscroll = function() {myFunction()};
 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
-<script>
-    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    }
-    
-    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("main").style.marginLeft = "0";
-      document.body.style.backgroundColor = "white";
-    }
-    
-        function getLoadCount(){
-    
-             // call an AWS gateway API, that then calls an AWS Lambda
-            // to read and then update AWS DynamoDB item showing load count
-            // Note call is synchronous, delays should be minimal
-            var req = new XMLHttpRequest();  
-            req.open('GET', 
-            "https://2suw3xvc05.execute-api.ap-southeast-2.amazonaws.com/Prod/readdb", 
-            false);   
-            req.send();  
-            if(req.status == 200)
-                {  
-                    len = req.responseText.length;
-                    // response text has opening and closing double quotes
-                    console.log(req.responseText);
-                    // set field in footer
-                    document.getElementById("loadcount").textContent = 
-                        req.responseText;
-                }
-            else {
-                // NOT OK response, so log in console
-                console.log(req.status)
-            }
-        }
-    
-        // read and write visit count into footer, then increment count in DB
-        window.onload = function(){
-    
-                getLoadCount();
-            }; 
-    
-</script>
-</body>
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+         
+      </script>
+   </body>
 </html>
-
-

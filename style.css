@@ -1,13 +1,96 @@
 body {
-    background: lightyellow;
+    background: rgb(218, 218, 216);
     font: 18px Arial, sans-serif;
-}
-h1 {
-    color: red;
 }
 p {
     padding-left: 20px;
 }
+.major-heading {
+  font-size: 22px;
+  font-weight: bold;
+}
+.subheading{
+  font-size: 20px;
+  font-weight: bold;
+}
+.minor-subheading {
+  font-size: 18px;
+  font-weight: bold;
+}
+.title-container {
+    display: flex;
+    text-align: left;
+  }
+.title {
+    padding-top: 15px;
+    padding: 10px;
+    padding-left: 0px;
+    flex: 75%;
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto;
+  }
+.contact-details {
+    font-size: 15px;
+    padding: 10px;
+    flex: 25%;
+  }
+.menu-icon {
+    font-size:30px;
+    cursor:pointer;
+}
+
+/*NAVBAR*/
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+  }  
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+#navbar b {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar a.active {
+    cursor:pointer;
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
