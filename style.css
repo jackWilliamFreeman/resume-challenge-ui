@@ -23,6 +23,7 @@ p {
   }
 .skills-container{
   padding: 10px;
+  min-width: 300px;
 }
 .title {
     padding-top: 15px;
