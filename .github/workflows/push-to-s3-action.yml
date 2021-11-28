@@ -17,3 +17,4 @@ jobs:
         aws-region: ap-southeast-2
     - name: Deploy site content to S3
       run: aws s3 cp index.html s3://jackfreemansresume.com
+      run: aws s3 cp style.css s3://jackfreemansresume.com
