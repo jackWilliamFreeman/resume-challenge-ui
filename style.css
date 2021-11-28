@@ -21,6 +21,9 @@ p {
     display: flex;
     text-align: left;
   }
+.skills-container{
+  padding: 10px;
+}
 .title {
     padding-top: 15px;
     padding: 10px;
