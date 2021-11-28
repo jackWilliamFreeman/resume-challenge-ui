@@ -29,7 +29,7 @@ p {
     padding-top: 15px;
     padding: 10px;
     padding-left: 0px;
-    flex: 75%;
+    flex: 50%;
     font-size: 40px;
     font-weight: bold;
     margin: auto;
@@ -37,7 +37,8 @@ p {
 .contact-details {
     font-size: 15px;
     padding: 10px;
-    flex: 25%;
+    flex: 50%;
+    text-align: right;
   }
 .menu-icon {
     font-size:30px;
