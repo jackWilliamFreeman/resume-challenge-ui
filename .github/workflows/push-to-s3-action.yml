@@ -19,5 +19,7 @@ jobs:
       run: aws s3 cp index.html ${{ secrets.AWS_S3_BUCKET }}
     - name: Deploy css
       run: aws s3 cp style.css ${{ secrets.AWS_S3_BUCKET }}
+    - name: Deploy css
+      run: aws s3 cp favicon.ico ${{ secrets.AWS_S3_BUCKET }}
     - name: Invalidate Cloudfront distro
       run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_ID }} --paths "/*"
