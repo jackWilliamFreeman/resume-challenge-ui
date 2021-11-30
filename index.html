@@ -41,7 +41,7 @@
             A well-developed set of complementary/supporting skills including scope management, requirements definition, people management and development
          </p>
          <hr>
-         <div class="major-heading" id="Employment">Employment History</div>
+         <div class="major-heading" id="Employment">Employment History</div> 
          <hr>
          <div class="subheading">Senior Application Architect - <em>Delta Web Application</em></div>
          <div class="minor-subheading">Sept 2020 to Present
@@ -60,7 +60,7 @@
          </div>
          <p>Delta is a web application developed in-house by Fortescue to collect and present operational data to planning and technical teams and provide decision support.</p>
          <ul>
-            <li>Angular 7+ UI Web application, with mixture of on premis and cloud infrastructure</li>
+            <li>Angular 7+ UI Web application, with mixture of on premise and cloud infrastructure</li>
             <li>A founding member of the Delta development team </li>
             <li>Involved with initial scoping of the project, architectural proof of concepts and initial infrastructure development</li>
             <li>Contributed to on-boarding and ramping of new staff and sharing domain knowledge as well as
@@ -208,7 +208,7 @@ function closeNav() {
          
                   // call an AWS gateway API, that then calls an AWS Lambda
                  // to read and then update AWS DynamoDB item showing load count
-                 // Note call is synchronous, delays should be minimal
+                 // Note call is synchronous, delays should be minimal, not ideal but its good enough, we can use fetch method but juice is not worth the squeeze
                  var req = new XMLHttpRequest();  
                  req.open('GET', 
                  "https://2suw3xvc05.execute-api.ap-southeast-2.amazonaws.com/Prod/readdb", 
